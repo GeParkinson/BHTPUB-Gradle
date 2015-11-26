@@ -1,0 +1,19 @@
+# gradle
+**/.gradle
+**/build
+**/classes
+
+# eclipse
+**.classpath
+**.settings
+**.project
+
+# intellij
+**.idea
+**.iml
+
+# mac osx
+**.DS_Store
+
+# linux
+**.directory
