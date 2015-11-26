@@ -1,1 +1,9 @@
 apply plugin: 'java'
+
+sourceSets{
+    generated {
+        java {
+            srcDir 'src/generated/java'
+        }
+    }
+}
