@@ -2,7 +2,7 @@ package org.dieschnittstelle.jee.esa.erp.entities;
 
 import java.io.Serializable;
 
-import org.codehaus.jackson.annotate.JsonTypeInfo;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import org.dieschnittstelle.jee.esa.entities.GenericCRUDEntity;
 
 /*

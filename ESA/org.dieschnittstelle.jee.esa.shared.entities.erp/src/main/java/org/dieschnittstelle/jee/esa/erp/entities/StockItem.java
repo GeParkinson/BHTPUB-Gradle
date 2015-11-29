@@ -12,14 +12,14 @@ import javax.persistence.PreRemove;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
-import org.jboss.logging.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 //@Entity
 @Table(name = "stock")
 @IdClass(ProductAtPosPK.class)
 public class StockItem {
 
-	protected static Logger logger = Logger.getLogger(StockItem.class);
+	protected static Logger logger = LoggerFactory.getLogger(StockItem.class);
 
 	@Id
 	@ManyToOne

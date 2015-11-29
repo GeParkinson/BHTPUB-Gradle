@@ -13,7 +13,8 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreRemove;
 import javax.persistence.PreUpdate;
 
-import org.jboss.logging.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Entity
 public class PointOfSale implements Serializable {
@@ -23,7 +24,7 @@ public class PointOfSale implements Serializable {
 	 */
 	private static final long serialVersionUID = -3397160788902953608L;
 	
-	protected static Logger logger = Logger.getLogger(PointOfSale.class);
+	protected static Logger logger = LoggerFactory.getLogger(PointOfSale.class);
 	
 	@Id
 	@GeneratedValue
