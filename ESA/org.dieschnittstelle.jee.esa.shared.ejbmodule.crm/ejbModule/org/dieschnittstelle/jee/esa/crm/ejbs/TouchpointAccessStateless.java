@@ -12,7 +12,7 @@ import org.dieschnittstelle.jee.esa.crm.entities.AbstractTouchpoint;
 import org.dieschnittstelle.jee.esa.crm.entities.CrmProductBundle;
 import org.dieschnittstelle.jee.esa.erp.ejbs.crud.PointOfSaleCRUDLocal;
 import org.dieschnittstelle.jee.esa.erp.entities.PointOfSale;
-import org.jboss.logging.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 @Stateless
 @WebService(targetNamespace = "http://dieschnittstelle.org/jee/esa/jaxws", serviceName = "TouchpointAccessWebService", endpointInterface = "org.dieschnittstelle.jee.esa.crm.ejbs.TouchpointAccessRemote")
@@ -20,8 +20,7 @@ import org.jboss.logging.Logger;
 public class TouchpointAccessStateless implements
 		TouchpointAccessRemote, TouchpointAccessLocal {
 
-	protected static Logger logger = Logger
-			.getLogger(TouchpointAccessStateless.class);
+	protected static Logger logger = LoggerFactory.getLogger(TouchpointAccessStateless.class);
 
 	@EJB
 	private TouchpointCRUDLocal touchpointCRUD;

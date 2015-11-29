@@ -9,7 +9,8 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.dieschnittstelle.jee.esa.crm.entities.AbstractTouchpoint;
 import org.dieschnittstelle.jee.esa.crm.entities.Address;
 import org.dieschnittstelle.jee.esa.crm.entities.StationaryTouchpoint;
@@ -26,8 +27,7 @@ public class TouchpointCRUDExecutor {
 	/**
 	 * the logger
 	 */
-	protected static Logger logger = Logger
-			.getLogger(TouchpointCRUDExecutor.class);
+	protected static Logger logger = LoggerFactory.getLogger(TouchpointCRUDExecutor.class);
 
 	/**
 	 * the id counter

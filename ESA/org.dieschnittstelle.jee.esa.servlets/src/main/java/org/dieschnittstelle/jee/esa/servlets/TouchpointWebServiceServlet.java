@@ -8,12 +8,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class TouchpointWebServiceServlet extends HttpServlet {
 
-	protected static Logger logger = Logger
-			.getLogger(TouchpointWebServiceServlet.class);
+	protected static Logger logger = LoggerFactory.getLogger(TouchpointWebServiceServlet.class);
 
 	public TouchpointWebServiceServlet() {
 		System.err.println("TouchpointWebServiceServlet: constructor invoked\n");

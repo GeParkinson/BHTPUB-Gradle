@@ -7,12 +7,12 @@ import javax.interceptor.AroundInvoke;
 import javax.interceptor.Interceptor;
 import javax.interceptor.InvocationContext;
 
-import org.jboss.logging.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 @Interceptor
 public class LoggingInterceptor {
 
-	protected static Logger logger = Logger.getLogger(LoggingInterceptor.class);
+	protected static Logger logger = LoggerFactory.getLogger(LoggingInterceptor.class);
 
 	/*
 	 * a map of loggers
@@ -22,7 +22,7 @@ public class LoggingInterceptor {
 	/**
 	 * obtain a logger
 	 */
-	private Logger getLogger(Class<?> klass) {
+	private LoggerFactory.getLogger(Class<?> klass) {
 		if (loggers.containsKey(klass))
 			return loggers.get(klass);
 		return createNewLogger(klass);
@@ -31,7 +31,7 @@ public class LoggingInterceptor {
 	private synchronized Logger createNewLogger(Class<?> klass) {
 		logger.info("createNewLogger(): class is: " + klass);
 
-		Logger logger = Logger.getLogger(klass);
+		Logger logger = LoggerFactory.getLogger(klass);
 		loggers.put(klass, logger);
 
 		return logger;

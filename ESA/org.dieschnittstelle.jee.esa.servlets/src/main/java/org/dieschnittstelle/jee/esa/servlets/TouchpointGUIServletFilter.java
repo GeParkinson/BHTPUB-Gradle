@@ -12,7 +12,8 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * checks whether the gui servlet is accessed by a user agent that accepts html
@@ -21,8 +22,7 @@ import org.apache.log4j.Logger;
  */
 public class TouchpointGUIServletFilter implements Filter {
 
-	protected static Logger logger = Logger
-			.getLogger(TouchpointGUIServletFilter.class);
+	protected static Logger logger = LoggerFactory.getLogger(TouchpointGUIServletFilter.class);
 
 	public TouchpointGUIServletFilter() {
 		System.err.println("TouchpointGUIServletFilter: constructor invoked\n");

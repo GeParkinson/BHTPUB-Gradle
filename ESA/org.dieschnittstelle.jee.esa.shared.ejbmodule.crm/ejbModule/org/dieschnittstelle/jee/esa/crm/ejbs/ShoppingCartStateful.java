@@ -11,7 +11,7 @@ import javax.ejb.Stateful;
 
 
 import org.dieschnittstelle.jee.esa.crm.entities.CrmProductBundle;
-import org.jboss.logging.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 /**
  * provides shopping cart functionality
@@ -19,7 +19,7 @@ import org.jboss.logging.Logger;
 @Stateful
 public class ShoppingCartStateful implements ShoppingCartRemote, ShoppingCartLocal {
 	
-	protected static Logger logger = Logger.getLogger(ShoppingCartStateful.class);
+	protected static Logger logger = LoggerFactory.getLogger(ShoppingCartStateful.class);
 
 	private List<CrmProductBundle> productBundles = new ArrayList<CrmProductBundle>();
 	

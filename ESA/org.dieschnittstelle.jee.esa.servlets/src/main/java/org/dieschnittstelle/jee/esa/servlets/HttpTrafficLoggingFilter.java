@@ -13,7 +13,8 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * example of a filter, taken from Crawford/Kaplan, JEE Design Patterns, 2003
@@ -25,7 +26,7 @@ public class HttpTrafficLoggingFilter implements Filter {
 	/**
 	 * the logger
 	 */
-	protected static Logger logger = Logger.getLogger(HttpTrafficLoggingFilter.class);
+	protected static Logger logger = LoggerFactory.getLogger(HttpTrafficLoggingFilter.class);
 	
 	/**
 	 * the config passed with the init method
