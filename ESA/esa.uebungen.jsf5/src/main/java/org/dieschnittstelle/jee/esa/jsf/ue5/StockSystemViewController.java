@@ -12,7 +12,7 @@ import org.dieschnittstelle.jee.esa.crm.entities.AbstractTouchpoint;
 import org.dieschnittstelle.jee.esa.erp.entities.IndividualisedProductItem;
 import org.dieschnittstelle.jee.esa.erp.entities.PointOfSale;
 import org.dieschnittstelle.jee.esa.erp.entities.StockItem;
-import org.jboss.logging.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 // declare a stocksystem local interface
 
 /* declare the class as named component using CDI annotations */  
@@ -20,8 +20,7 @@ import org.jboss.logging.Logger;
 /* TODO declare the class as application scoped using the CDI annotation */
 public class StockSystemViewController {
 
-	protected static Logger logger = Logger
-			.getLogger(StockSystemViewController.class);
+	protected static Logger logger = LoggerFactory.getLogger(StockSystemViewController.class);
 
 	/*
 	 * TODO declare a dependency to the stock system ejb via a new local interface,

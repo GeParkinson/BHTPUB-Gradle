@@ -2,7 +2,8 @@ package org.dieschnittstelle.jee.esa.jaxrs.client.junit;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.codehaus.jackson.jaxrs.JacksonJaxbJsonProvider;
 import org.dieschnittstelle.jee.esa.erp.entities.AbstractProduct;
 import org.dieschnittstelle.jee.esa.erp.entities.IndividualisedProductItem;
@@ -16,7 +17,7 @@ public class ProductCRUDClient {
 
 	private IProductCRUDWebService proxy;
 	
-	protected static Logger logger = Logger.getLogger(ProductCRUDClient.class);
+	protected static Logger logger = LoggerFactory.getLogger(ProductCRUDClient.class);
 
 	public ProductCRUDClient() throws Exception {
 		/*

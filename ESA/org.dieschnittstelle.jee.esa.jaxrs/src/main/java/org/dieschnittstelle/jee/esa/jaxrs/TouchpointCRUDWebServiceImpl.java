@@ -6,14 +6,15 @@ import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.core.Context;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.dieschnittstelle.jee.esa.crm.entities.StationaryTouchpoint;
 import org.dieschnittstelle.jee.esa.crm.entities.AbstractTouchpoint;
 import org.dieschnittstelle.jee.esa.entities.GenericCRUDExecutor;
 
 public class TouchpointCRUDWebServiceImpl implements ITouchpointCRUDWebService {
 	
-	protected static Logger logger = Logger.getLogger(TouchpointCRUDWebServiceImpl.class);
+	protected static Logger logger = LoggerFactory.getLogger(TouchpointCRUDWebServiceImpl.class);
 	
 	/**
 	 * this accessor will be provided by the ServletContext, to which it is written by the TouchpointServletContextListener

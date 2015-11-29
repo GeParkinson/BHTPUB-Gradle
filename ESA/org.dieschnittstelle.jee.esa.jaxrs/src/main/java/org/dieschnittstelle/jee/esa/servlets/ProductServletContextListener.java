@@ -9,15 +9,15 @@ import org.dieschnittstelle.jee.esa.entities.GenericCRUDExecutor;
 import org.dieschnittstelle.jee.esa.erp.entities.AbstractProduct;
 import org.dieschnittstelle.jee.esa.erp.entities.IndividualisedProductItem;
 import org.dieschnittstelle.jee.esa.erp.entities.ProductType;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /*
  * this listener manages a crud executor for proucts in the same was as the TouchpointsServletContextListener for touchpoints
  */
 public class ProductServletContextListener implements ServletContextListener {
 
-	protected static Logger logger = Logger
-			.getLogger(ProductServletContextListener.class);
+	protected static Logger logger = LoggerFactory.getLogger(ProductServletContextListener.class);
 
 	@Override
 	public void contextDestroyed(ServletContextEvent evt) {

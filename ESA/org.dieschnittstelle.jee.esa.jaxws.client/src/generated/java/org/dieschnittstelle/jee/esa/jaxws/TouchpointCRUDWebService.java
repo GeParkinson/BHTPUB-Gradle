@@ -28,7 +28,7 @@ public class TouchpointCRUDWebService extends Service {
         try {
             url = new URL("http://localhost:8080/org.dieschnittstelle.jee.esa.jaxws/TouchpointCRUDWebService?wsdl");
         } catch (MalformedURLException e) {
-            java.util.logging.Logger.getLogger(TouchpointCRUDWebService.class.getName())
+            java.util.logging.LoggerFactory.getLogger(TouchpointCRUDWebService.class.getName())
                 .log(java.util.logging.Level.INFO, 
                      "Can not initialize the default wsdl from {0}", "http://localhost:8080/org.dieschnittstelle.jee.esa.jaxws/TouchpointCRUDWebService?wsdl");
         }

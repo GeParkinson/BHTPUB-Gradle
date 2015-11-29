@@ -8,13 +8,12 @@ import javax.servlet.annotation.WebListener;
 
 import org.dieschnittstelle.jee.esa.crm.entities.AbstractTouchpoint;
 import org.dieschnittstelle.jee.esa.entities.GenericCRUDExecutor;
-import org.jboss.logging.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 @WebListener
 public class TouchpointServletContextListener implements ServletContextListener {
 
-	protected static Logger logger = Logger
-			.getLogger(TouchpointServletContextListener.class);
+	protected static Logger logger = LoggerFactory.getLogger(TouchpointServletContextListener.class);
 
 	@Override
 	public void contextDestroyed(ServletContextEvent evt) {

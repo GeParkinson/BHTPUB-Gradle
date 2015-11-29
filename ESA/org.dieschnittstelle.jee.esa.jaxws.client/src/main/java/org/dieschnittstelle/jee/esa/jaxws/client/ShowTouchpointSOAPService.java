@@ -3,7 +3,8 @@ package org.dieschnittstelle.jee.esa.jaxws.client;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.dieschnittstelle.jee.esa.crm.entities.AbstractTouchpoint;
 import org.dieschnittstelle.jee.esa.crm.entities.StationaryTouchpoint;
 import org.dieschnittstelle.jee.esa.jaxws.Address;
@@ -12,8 +13,7 @@ import org.dieschnittstelle.jee.esa.jaxws.TouchpointCRUDWebServiceSOAP;
 
 public class ShowTouchpointSOAPService {
 
-	protected static Logger logger = Logger
-			.getLogger(ShowTouchpointSOAPService.class);
+	protected static Logger logger = LoggerFactory.getLogger(ShowTouchpointSOAPService.class);
 
 	/**
 	 * @param args
