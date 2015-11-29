@@ -14,13 +14,13 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreRemove;
 import javax.persistence.PreUpdate;
 
-import org.jboss.logging.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 @Entity
 @DiscriminatorValue("mobile")
 public class MobileTouchpoint extends AbstractTouchpoint {
 
-	protected static Logger logger = Logger.getLogger(MobileTouchpoint.class);
+	protected static Logger logger = LoggerFactory.getLogger(MobileTouchpoint.class);
 	
 	/**
 	 * 

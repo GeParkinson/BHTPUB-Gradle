@@ -1,6 +1,7 @@
 package org.dieschnittstelle.jee.esa.jsf.client.jaxrs;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.codehaus.jackson.jaxrs.JacksonJaxbJsonProvider;
 import org.dieschnittstelle.jee.esa.crm.entities.Address;
 import org.dieschnittstelle.jee.esa.crm.entities.StationaryTouchpoint;
@@ -11,8 +12,7 @@ import org.jboss.resteasy.spi.ResteasyProviderFactory;
 
 public class CreateTouchpointsUsingRESTService {
 
-	protected static Logger logger = Logger
-			.getLogger(CreateTouchpointsUsingRESTService.class);
+	protected static Logger logger = LoggerFactory.getLogger(CreateTouchpointsUsingRESTService.class);
 
 	public static void main(String[] args) {
 

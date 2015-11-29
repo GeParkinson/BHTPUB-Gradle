@@ -3,13 +3,13 @@ package org.dieschnittstelle.jee.esa.basics.annotations;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.dieschnittstelle.jee.esa.basics.IStockItem;
 
 public class StockItemProxyImpl implements IStockItem {
 
-	protected static Logger logger = Logger
-			.getLogger(StockItemProxyImpl.class);
+	protected static Logger logger = LoggerFactory.getLogger(StockItemProxyImpl.class);
 
 	private Object proxiedObject;
 

@@ -2,7 +2,8 @@ package org.dieschnittstelle.jee.esa.ejbs.client.shopping;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.dieschnittstelle.jee.esa.crm.ejbs.CampaignTrackingRemote;
 import org.dieschnittstelle.jee.esa.crm.ejbs.CustomerTrackingRemote;
 import org.dieschnittstelle.jee.esa.crm.ejbs.ShoppingCartRemote;
@@ -18,7 +19,7 @@ import org.dieschnittstelle.jee.esa.erp.entities.Campaign;
 
 public class ShoppingSession implements ShoppingBusinessDelegate {
 
-	protected static Logger logger = Logger.getLogger(ShoppingSession.class);
+	protected static Logger logger = LoggerFactory.getLogger(ShoppingSession.class);
 
 	/*
 	 * the three beans that are used

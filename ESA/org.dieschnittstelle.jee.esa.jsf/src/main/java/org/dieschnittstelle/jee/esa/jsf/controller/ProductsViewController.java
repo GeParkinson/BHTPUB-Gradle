@@ -14,14 +14,13 @@ import org.dieschnittstelle.jee.esa.crm.entities.CrmProductBundle;
 import org.dieschnittstelle.jee.esa.erp.entities.AbstractProduct;
 import org.dieschnittstelle.jee.esa.jsf.Constants;
 import org.dieschnittstelle.jee.esa.jsf.model.ShoppingCartModel;
-import org.jboss.logging.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 @ManagedBean(name = "productsVC")
 @SessionScoped
 public class ProductsViewController {
 
-	protected static Logger logger = Logger
-			.getLogger(ProductsViewController.class);
+	protected static Logger logger = LoggerFactory.getLogger(ProductsViewController.class);
 
 
 	public ProductsViewController() {

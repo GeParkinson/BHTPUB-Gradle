@@ -3,7 +3,8 @@ package org.dieschnittstelle.jee.esa.basics.reflection;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.dieschnittstelle.jee.esa.basics.IStockItem;
 import org.dieschnittstelle.jee.esa.basics.IStockItemBuilder;
 import org.w3c.dom.Element;
@@ -16,8 +17,7 @@ import java.lang.reflect.Method;
 // this builder only reads in the 
 public class ReflectedStockItemBuilder implements IStockItemBuilder {
 
-	protected static Logger logger = Logger
-			.getLogger(ReflectedStockItemBuilder.class);
+	protected static Logger logger = LoggerFactory.getLogger(ReflectedStockItemBuilder.class);
 
 	@Override
 	public IStockItem buildStockItemFromElement(Element el) {

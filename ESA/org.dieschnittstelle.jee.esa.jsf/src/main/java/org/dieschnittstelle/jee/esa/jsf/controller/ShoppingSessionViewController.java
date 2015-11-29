@@ -22,15 +22,14 @@ import org.dieschnittstelle.jee.esa.crm.ejbs.crud.CustomerCRUDLocal;
 import org.dieschnittstelle.jee.esa.crm.entities.AbstractTouchpoint;
 import org.dieschnittstelle.jee.esa.crm.entities.Customer;
 import org.dieschnittstelle.jee.esa.jsf.model.ShoppingCartModel;
-import org.jboss.logging.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 // see the faces-config.xml where the following properties are declared as well as the managed property for the shoppingCartModel
 //@ManagedBean(name = "shoppingSessionVC")
 //@SessionScoped
 public class ShoppingSessionViewController {
 
-	private static Logger logger = Logger
-			.getLogger(ShoppingSessionViewController.class);
+	private static Logger logger = LoggerFactory.getLogger(ShoppingSessionViewController.class);
 
 	/*
 	 * model elements

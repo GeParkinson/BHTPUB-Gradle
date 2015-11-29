@@ -4,7 +4,8 @@ import static org.dieschnittstelle.jee.esa.ejbs.client.Constants.*;
 
 import java.util.Collection;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.dieschnittstelle.jee.esa.crm.entities.CampaignExecution;
 import org.dieschnittstelle.jee.esa.crm.entities.Customer;
 import org.dieschnittstelle.jee.esa.crm.entities.CustomerTransaction;
@@ -21,7 +22,7 @@ import org.dieschnittstelle.jee.esa.shared.lib.Util;
 
 public class TotalUsecase {
 
-	protected static Logger logger = Logger.getLogger(TotalUsecase.class);
+	protected static Logger logger = LoggerFactory.getLogger(TotalUsecase.class);
 
 	public static void main(String[] args) {
 		try {

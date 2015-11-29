@@ -5,7 +5,8 @@ import static org.dieschnittstelle.jee.esa.ejbs.client.Constants.PRODUCT_2;
 import static org.dieschnittstelle.jee.esa.ejbs.client.Constants.TOUCHPOINT_1;
 import static org.dieschnittstelle.jee.esa.ejbs.client.Constants.TOUCHPOINT_2;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.dieschnittstelle.jee.esa.shared.lib.Util;
 import org.dieschnittstelle.jee.esa.ejbs.client.ejbclients.ProductCRUDClient;
 import org.dieschnittstelle.jee.esa.ejbs.client.ejbclients.StockSystemClient;
@@ -13,7 +14,7 @@ import org.dieschnittstelle.jee.esa.ejbs.client.ejbclients.TouchpointAccessClien
 
 public class ShowStockSystem {
 
-	protected static Logger logger = Logger.getLogger(ShowStockSystem.class);
+	protected static Logger logger = LoggerFactory.getLogger(ShowStockSystem.class);
 
 	public static void main(String[] args) {
 		try {

@@ -26,13 +26,14 @@ import org.dieschnittstelle.jee.esa.erp.entities.Campaign;
 import org.dieschnittstelle.jee.esa.erp.entities.IndividualisedProductItem;
 import org.dieschnittstelle.jee.esa.erp.entities.ProductBundle;
 import org.dieschnittstelle.jee.esa.erp.entities.ProductType;
-import org.jboss.logging.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Named
 @ApplicationScoped
 public class StockSystemHelper {
 
-	protected static Logger logger = Logger.getLogger(StockSystemHelper.class);
+	protected static Logger logger = LoggerFactory.getLogger(StockSystemHelper.class);
 
 	// the entities
 	private StationaryTouchpoint TOUCHPOINT_1;

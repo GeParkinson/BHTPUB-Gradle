@@ -3,7 +3,8 @@ package org.dieschnittstelle.jee.esa.ejbs.client.demos;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.dieschnittstelle.jee.esa.crm.ejbs.crud.CustomerCRUDRemote;
 import org.dieschnittstelle.jee.esa.crm.entities.Customer;
 import org.dieschnittstelle.jee.esa.ejbs.client.Constants;
@@ -12,8 +13,7 @@ import org.dieschnittstelle.jee.esa.ejbs.client.ejbclients.CustomerCRUDClient;
 
 public class ShowConcurrentEntityAccess {
 
-	protected static Logger logger = Logger
-			.getLogger(ShowConcurrentEntityAccess.class);
+	protected static Logger logger = LoggerFactory.getLogger(ShowConcurrentEntityAccess.class);
 
 	public static void main(String[] args) {
 

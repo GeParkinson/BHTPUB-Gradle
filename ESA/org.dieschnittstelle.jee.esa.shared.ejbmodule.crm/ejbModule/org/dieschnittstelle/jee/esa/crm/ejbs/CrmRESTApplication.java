@@ -8,7 +8,7 @@ import org.jboss.resteasy.logging.Logger;
 @ApplicationPath("/rest")
 public class CrmRESTApplication extends Application {
 
-	protected static Logger logger = Logger.getLogger(CrmRESTApplication.class);
+	protected static Logger logger = LoggerFactory.getLogger(CrmRESTApplication.class);
 	
 	public CrmRESTApplication() {
 		logger.info("<constructor>");

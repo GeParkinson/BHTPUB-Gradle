@@ -20,8 +20,10 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreRemove;
 import javax.persistence.PreUpdate;
 
-import org.apache.commons.lang.builder.EqualsBuilder;
-import org.jboss.logging.Logger;
+
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /*
  * 
@@ -29,7 +31,7 @@ import org.jboss.logging.Logger;
 @Entity
 public class Customer implements Serializable {
 
-	protected static Logger logger = Logger.getLogger(Customer.class);
+	protected static Logger logger = LoggerFactory.getLogger(Customer.class);
 	
 	/**
 	 * 

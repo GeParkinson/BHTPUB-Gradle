@@ -5,12 +5,12 @@ import java.io.File;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class TouchpointServletContextListener implements ServletContextListener {
 
-	protected static Logger logger = Logger
-			.getLogger(TouchpointServletContextListener.class);
+	protected static Logger logger = LoggerFactory.getLogger(TouchpointServletContextListener.class);
 
 	public TouchpointServletContextListener() {
 		System.err.println("\nTouchpointServletContextListener: constructor invoked\n");

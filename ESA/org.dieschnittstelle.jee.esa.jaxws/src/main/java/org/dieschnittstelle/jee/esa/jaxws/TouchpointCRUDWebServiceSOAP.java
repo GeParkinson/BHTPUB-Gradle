@@ -15,7 +15,7 @@ import javax.xml.ws.handler.MessageContext;
 import org.dieschnittstelle.jee.esa.crm.entities.AbstractTouchpoint;
 import org.dieschnittstelle.jee.esa.crm.entities.StationaryTouchpoint;
 import org.dieschnittstelle.jee.esa.entities.GenericCRUDExecutor;
-import org.jboss.logging.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import static org.dieschnittstelle.jee.esa.shared.lib.Util.*;
 
@@ -23,8 +23,7 @@ import static org.dieschnittstelle.jee.esa.shared.lib.Util.*;
 @SOAPBinding(parameterStyle = SOAPBinding.ParameterStyle.WRAPPED)
 public class TouchpointCRUDWebServiceSOAP {
 
-	protected static Logger logger = Logger
-			.getLogger(TouchpointCRUDWebServiceSOAP.class);
+	protected static Logger logger = LoggerFactory.getLogger(TouchpointCRUDWebServiceSOAP.class);
 
 	@Resource
 	private WebServiceContext wscontext;

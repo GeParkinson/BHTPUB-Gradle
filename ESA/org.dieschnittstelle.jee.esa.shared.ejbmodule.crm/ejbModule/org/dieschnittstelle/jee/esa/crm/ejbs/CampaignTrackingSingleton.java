@@ -12,7 +12,8 @@ import javax.ejb.Startup;
 
 import org.dieschnittstelle.jee.esa.crm.entities.AbstractTouchpoint;
 import org.dieschnittstelle.jee.esa.crm.entities.CampaignExecution;
-import org.jboss.logging.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * tracks the execution of a compaign
@@ -25,7 +26,7 @@ import org.jboss.logging.Logger;
 @javax.ejb.ConcurrencyManagement(javax.ejb.ConcurrencyManagementType.CONTAINER)
 public class CampaignTrackingSingleton implements CampaignTrackingRemote {
 
-	protected static Logger logger = Logger.getLogger(CampaignTrackingSingleton.class);
+	protected static Logger logger = LoggerFactory.getLogger(CampaignTrackingSingleton.class);
 	
 	/**
 	 * a map that associates touchpoint ids with campaign ids (we assume that

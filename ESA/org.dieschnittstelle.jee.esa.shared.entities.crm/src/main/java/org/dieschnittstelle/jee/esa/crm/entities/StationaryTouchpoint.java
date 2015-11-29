@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
-import org.jboss.logging.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 /**
  * @author kreutel
@@ -28,7 +28,7 @@ import org.jboss.logging.Logger;
 @DiscriminatorValue("stationary")
 public class StationaryTouchpoint extends AbstractTouchpoint  implements Serializable {
 	
-	protected static Logger logger = Logger.getLogger(StationaryTouchpoint.class);
+	protected static Logger logger = LoggerFactory.getLogger(StationaryTouchpoint.class);
 	
 	/**
 	 * 

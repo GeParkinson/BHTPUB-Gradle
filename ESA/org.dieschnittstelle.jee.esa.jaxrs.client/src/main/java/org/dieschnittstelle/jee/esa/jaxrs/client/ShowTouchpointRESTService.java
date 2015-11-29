@@ -3,7 +3,8 @@ package org.dieschnittstelle.jee.esa.jaxrs.client;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.codehaus.jackson.jaxrs.JacksonJaxbJsonProvider;
 import org.dieschnittstelle.jee.esa.crm.entities.AbstractTouchpoint;
 import org.dieschnittstelle.jee.esa.crm.entities.Address;
@@ -16,8 +17,7 @@ import org.jboss.resteasy.spi.ResteasyProviderFactory;
 
 public class ShowTouchpointRESTService {
 
-	protected static Logger logger = Logger
-			.getLogger(ShowTouchpointRESTService.class);
+	protected static Logger logger = LoggerFactory.getLogger(ShowTouchpointRESTService.class);
 
 	/**
 	 * @param args
