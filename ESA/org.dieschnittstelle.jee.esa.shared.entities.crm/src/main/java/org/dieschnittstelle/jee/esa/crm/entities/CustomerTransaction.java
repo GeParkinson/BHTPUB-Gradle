@@ -21,12 +21,13 @@ import javax.persistence.PreUpdate;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import org.jboss.logging.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Entity
 public class CustomerTransaction implements Serializable {
 
-	protected static Logger logger = Logger.getLogger(CustomerTransaction.class);
+	protected static Logger logger = LoggerFactory.getLogger(CustomerTransaction.class);
 	
 	/**
 	 * 

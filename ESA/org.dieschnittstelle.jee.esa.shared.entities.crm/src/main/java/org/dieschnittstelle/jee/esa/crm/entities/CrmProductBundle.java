@@ -15,7 +15,8 @@ import javax.persistence.PreUpdate;
 import javax.persistence.Transient;
 
 import org.dieschnittstelle.jee.esa.erp.entities.AbstractProduct;
-import org.jboss.logging.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * a product bundle on the part of the crm system that tracks the number of
@@ -24,7 +25,7 @@ import org.jboss.logging.Logger;
 @Entity
 public class CrmProductBundle implements Serializable {
 
-	protected static Logger logger = Logger.getLogger(CrmProductBundle.class);
+	protected static Logger logger = LoggerFactory.getLogger(CrmProductBundle.class);
 
 	/**
 	 * 

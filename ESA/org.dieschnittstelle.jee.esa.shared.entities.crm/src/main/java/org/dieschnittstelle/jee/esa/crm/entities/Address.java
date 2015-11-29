@@ -4,14 +4,15 @@ import java.io.Serializable;
 
 import javax.persistence.Entity;
 
-import org.apache.commons.lang.builder.EqualsBuilder;
-import org.apache.commons.lang.builder.HashCodeBuilder;
-import org.jboss.logging.Logger;
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Entity
 public class Address extends Location  implements Serializable {
 	
-	protected static Logger logger = Logger.getLogger(Address.class);
+	protected static Logger logger = LoggerFactory.getLogger(Address.class);
 	
 	/**
 	 * 
