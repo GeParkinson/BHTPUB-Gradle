@@ -1,1 +1,10 @@
 apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':org.dieschnittstelle.jee.esa.shared.lib')
+    compile 'org.slf4j:slf4j-api:1.7.13'
+}
